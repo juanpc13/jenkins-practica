@@ -1,0 +1,11 @@
+maven-plugin
+git
+github
+pipeline-graph-analysis
+pipeline-build-step
+pipeline-stage-view
+pipeline-stage-step
+pipeline-milestone-step
+pipeline-model-definition
+dashboard-view
+copyartifact
