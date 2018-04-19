@@ -1,0 +1,20 @@
+pipeline{
+	agent any
+	stages{
+		stage('Get code'){
+			steps{
+				git 'https://github.com/jglick/simple-maven-project-with-tests/tree/master/src/test/java/test'
+			}
+		}
+		stage('Test example'){
+			steps{
+				sh "$MAVEN test -Dmaven.test.failure.ignore"
+			}
+		}
+		stage('Construir'){
+			steps{
+				sh "$MAVEN install"
+			}
+		}
+	}
+}
