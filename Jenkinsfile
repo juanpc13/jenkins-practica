@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('Get code'){
 			steps{
-				git 'https://github.com/jglick/simple-maven-project-with-tests/tree/master/src/test/java/test'
+				git 'https://github.com/jglick/simple-maven-project-with-tests'
 			}
 		}
 		stage('Test example'){
